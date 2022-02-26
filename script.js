@@ -118,10 +118,10 @@ const taskTotalHrs=()=>
 {
     const total=taskList.reduce((acc,item)=>
      acc + item.hr,0);
-     const tlBadHrs=badTotalHrs();
-     const grandTotal=total+tlBadHrs;
-     document.getElementById("total-hr").innerHTML=total;
      //const tlBadHrs=badTotalHrs();
+     //const grandTotal=total+tlBadHrs;
+     document.getElementById("total-hr").innerHTML=total;
+     const tlBadHrs=badTotalHrs();
      return total;
     
 };
